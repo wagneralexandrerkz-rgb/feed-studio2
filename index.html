@@ -69,6 +69,16 @@ header{
   border:1px solid rgba(242,237,228,0.25);
 }
 .btn-ghost:hover{background:rgba(242,237,228,0.08); transform:none; box-shadow:none;}
+.icon-btn{
+  display:inline-flex; align-items:center; justify-content:center;
+  width:40px; height:40px; border-radius:999px;
+  border:1px solid rgba(242,237,228,0.25);
+  color:var(--sand);
+  transition:border-color .15s ease, transform .15s ease, color .15s ease;
+}
+.icon-btn:hover{border-color:var(--coral); color:var(--coral); transform:translateY(-2px);}
+.icon-btn svg{width:18px; height:18px;}
+.header-actions{display:flex; align-items:center; gap:12px;}
 @media (max-width:760px){ .nav-links{display:none;} }
 
 /* ---------- hero ---------- */
@@ -229,9 +239,14 @@ footer{
       <a href="#portfolio">Portfólio</a>
       <a href="#processo">Como funciona</a>
     </nav>
-    <a class="btn" href="https://wa.me/5531990701311?text=Oi!%20Vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento" target="_blank" rel="noopener">
-      Falar no WhatsApp
-    </a>
+    <div class="header-actions">
+      <a class="icon-btn" href="https://instagram.com/feedstudio.vsl" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+      </a>
+      <a class="btn" href="https://wa.me/5531990701311?text=Oi!%20Vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento" target="_blank" rel="noopener">
+        Falar no WhatsApp
+      </a>
+    </div>
   </div>
 </header>
 
